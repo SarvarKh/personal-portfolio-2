@@ -1,0 +1,203 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+/*Navigation bar*/
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+ul {
+    list-style: none;
+}
+
+.nav-list a {
+    display: block;
+    font-size: 1.1rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+/*welcome-section*/
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url("nature.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 1.5rem;
+}
+
+/*Projects-section*/
+.projects-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    color: #f0f0f0;
+    height: 100vh;
+}
+
+#projects h2 {
+    max-width: 440px;
+    margin: 0 auto 2rem auto;
+    border-bottom: 0.2rem solid #f0f0f0;
+    font-size: 2.0rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 6rem;
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+.project {
+    background-color: #f0f0f0;
+    box-shadow: 2px 2px 4px rgba(250, 250, 250, .5);
+}
+
+.project-image {
+    height: calc(100% - 9.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+img {
+    display: block;
+}
+
+.project-title {
+    font-size: 1rem;
+    padding: 2rem 0.5rem;
+    color: black;
+}
+
+.code {
+    color: #f0f0f0;
+    transition: color 0.3s ease-out;
+}
+
+.project:hover .code {
+    color: rgba(200, 0, 0, 1);
+    text-shadow: 1px 1px 1px #ff0000;
+}
+
+.btn-show-all {
+    font-size: 1rem;
+    background-color: #f0f0f0;
+    color: black;
+    transition: background 0.3s ease-out;
+}
+
+.btn {
+    display: inline-block;
+    padding: .5rem 2rem;
+    border-radius: 8px;
+}
+
+.btn-show-all:hover {
+    background: rgba(250, 100, 100, 1);
+}
+
+
+/*experience-section*/
+.experience-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url("dark-nature.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.experience-section h2 {
+    margin-bottom: 2.5rem;
+    font-size: 2.5rem;
+    color: #f0f0f0;
+}
+
+.experience-list a {
+    text-decoration: none;
+    color: #f0f0f0;
+}
+
+.experience-list li {
+    margin: 1rem 0rem;
+    font-size: 1.2rem;
+}
+
+.year {
+    margin-right: 1.5rem;
+    font-weight: bold;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    background-size: cover;
+}
+
+.contact-section-header {
+    color: #f0f0f0;
+    margin-bottom: 5rem;
+    font-size: 1.7rem;
+}
+
+.contact-section-header p {
+    font-size: 1rem;
+    text-align: center;
+    font: italic;
+}
+.contact-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+    background-size: cover;
+    border-top: 3px solid rgba(250, 100, 100, 1);
+    color: #f0f0f0;
+}
+
+footer a{
+    text-decoration: none;
+    color: #f0f0f0;
+}
